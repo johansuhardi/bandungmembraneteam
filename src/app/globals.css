@@ -20,10 +20,6 @@ html {
   background-size: cover;
   background-position: center;
   position: relative;
-  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
- 
- 
 }
 
 .containernavbar {
@@ -358,6 +354,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   padding: 40px;
 }
 
+.smsuper {
+  font-size:12px;
+  font: bold;
+}
+
 .heading {
     text-align: right;
     font-size: 20px;
@@ -365,8 +366,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     padding-top: 60px;
     padding-bottom: none;
     padding-left: 60px;
-    color: white;
-    text-decoration: underline gold;
+    color: black;
 }
 
 .gallery-image {
@@ -451,6 +451,10 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 
 
+}
+
+.googlemaps {
+  box-shadow: 1px -1px 7px 2px lightgreen;
 
 }
 
@@ -468,14 +472,32 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 
 .kontakinfo {
-  padding-left:75%;
+  padding-left:60%;
 }
 
 .aliu {
  display: flex;
 }
 
+.textsm {
+  font-size:12px;
+  font: bold;
+  color: rgb(198, 198, 250);
+}
+
+.textsm:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 320px) and (max-width: 767px){
+  .tentangkami2 {
+    text-align: center;
+  }
+
+  .tentangkami {
+    flex-direction: column;
+  }
+
   .map-responsive{
 
     overflow:hidden;
@@ -485,6 +507,8 @@ input:nth-of-type(5):checked ~ main#carousel {
     position:relative;
   
     height:0;
+
+    box-shadow: 1px -1px 7px 2px lightgreen;
   
   }
 
@@ -507,7 +531,91 @@ input:nth-of-type(5):checked ~ main#carousel {
     position:absolute;
   
   }
+
+  .kontakinfo {
+    padding-left:0%;
+  }
+
+  .foterall {
+   flex-direction: column;
+  }
+
+ .informasiall1 {
+  display: block;
+ }
+
+ .informasiall {
+  display: none;
+ }
+
+
+  
 }
+
+.titik {
+  color: darkgray;
+}
+
+.fontfamily {
+  font-family: Eastwood;
+}
+
+.tentangkami1 {
+  padding: 40px;
+}
+
+.sm {
+  font-size: 14px;
+}
+
+.lg {
+  font-size: 30px;
+}
+
+.tentangkami {
+  padding: 8%;
+  background-color: black;
+  display: flex;
+  
+}
+.byhamud {
+  border-top: 1px solid gray;
+  padding: 4px;
+  background-color: #34343b;
+}
+
+.foterall {
+  padding: 100px;
+  display: flex;
+  background-color: #34343b;
+}
+
+
+.kecil {
+  font-size: 14px;
+  color: white;
+  
+}
+
+.informasiall {
+  padding-left: 30%;
+display: block;
+}
+
+.linktentangkami:hover {
+  color: orange;
+}
+
+.informasiall1 {
+  display: none;
+}
+
+
+
+
+
+
+
 
 
 

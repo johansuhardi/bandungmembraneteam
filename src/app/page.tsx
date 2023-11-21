@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import Navbar from "@/app/Utilities/Navbar/Navbar"
 import TombolKembali from "@/app/components/TombolKembali/TombolKembali"
 import Carousel from "@/app/components/Carousel/Carousel"
@@ -30,6 +31,8 @@ import gambar25 from "@/app/photo/28.jpeg"
 import gambar26 from "@/app/photo/29.jpeg"
 import gambar27 from "@/app/photo/30.jpeg"
 import Head from "next/head"
+import Link from "next/link"
+import gambar33 from "@/app/photo/33.jpeg"
 
 export default function Home() {
   return (
@@ -256,18 +259,70 @@ export default function Home() {
         </div>
 
 
-        <div className="text-white" id="tentangkami">Tentang kami</div>
-        <div className="map">
-          <center id="hubungikami">
+
+       
+        <div className="text-white tentangkami " id="tentangkami">
+          <div>
+          <div className="italic tentangkami1">
+            
+          <center>
+          <p className="lg ">Tentang Kami</p>
+          <p className="sm">Bandung Membrane Team</p>
+          </center>
+          </div>
+          <div className="tentangkami2">
+
+          <p>Kami merupakan perusahaan spesialis pemasangan tenda membrane (tensile structure) </p>
+          <p>yang telah berpengalaman dan memiliki tenaga ahli professional dan siap membantu dalam</p>
+          <p> perencanaan hingga pemasangan di lokasi Anda. Tenaga ahli kami merupakan tim yang sudah</p>
+           <p>berpengalaman di bidangnya mulai dari survey, desain dan pemasangan tenda membrane dengan</p>
+          <p>  tingkat kesulitan yang berbeda-beda setiap lokasi.</p>
+          <br />
+          <p> durability, estetika serta keselamatan yang baik. Hasil pemasangan struktur atap membrane kami telah digunakan</p>
+          <p>Keberhasilan kami dalam mengerjakan struktur atap membrane di beberapa lokasi prestisius yang membuktikan</p>
+          <p>bahwa kami telah dipercaya dalam pemasangan tensile membrane dengan standar kekuatan konstruksi yang benar, </p>
+          
+          
+
+          </div>
+          </div>
+          <div className="gambartentangkami">
+         <Image src={gambar33} width={600} height={300}  alt="Hyperjump Logo"></Image> 
+          </div>
+        </div>
+
+
+        <p className="titik" id="hubungikami"></p>
+        <br />
+        <br />
+                <div className="map">
+        
+          <center >
             <div  className="text-white text-3xl font-bold">Tempat kami dan informasi kontak</div>
           </center>
           <br />
           <div className="text-white font-bold">Our Location</div>
 <div className="aliu">
             <div className="map-responsive">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.589667552925!2d107.49545557499565!3d-6.819657093178082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDknMTAuOCJTIDEwN8KwMjknNTIuOSJF!5e0!3m2!1sid!2sid!4v1700399818329!5m2!1sid!2sid" width="300" height="200" loading="lazy" ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.589667552925!2d107.49545557499565!3d-6.819657093178082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDknMTAuOCJTIDEwN8KwMjknNTIuOSJF!5e0!3m2!1sid!2sid!4v1700399818329!5m2!1sid!2sid" width="300" height="200" loading="lazy" className="googlemaps"></iframe>
             </div>
-<p className="text-white font-bold kontakinfo">aaaaaaaaa</p>
+<p className="text-white font-bold kontakinfo flex flex-col text-xl">Informasi Kontak
+<br />
+<br />
+<p>Bandung Membrane team</p>
+<p className="smsuper">Kp. bobojo rt003 rw.002
+
+<p>DS.cimanggu</p>
+<p>kec.ngamprah</p>
+<p>kab.bandung barat</p>
+</p>
+<br />
+<br />
+<p>Nomor HP</p>
+<a className="textsm"  href="https://wa.me/+6281320818830">+6281320818830</a>
+<br />
+<p>Email</p>
+ <a className="textsm" href="mailto:taufikhid28117@gmail.com">taufikhid28117@gmail.com</a></p>
 
 </div>
 
@@ -278,8 +333,64 @@ export default function Home() {
       </div>
 
       <footer>
+        <div className="foterall ">
+          <p  className="kecil">Tentang Kami
+            <br />
+            <br />
+            
+            <p className="kecil">BMT merupakan perusahaan</p>
+            <p className="kecil">penyedia Tenda Membrane yang telah </p>
+            <p className="kecil">berpengalaman dan siap membantu dalam</p>
+            <p className="kecil">perencanaan hingga pemasangan di lokasi.</p>
+            <br />
+            <a href="#tentangkami" className=" linktentangkami kecil">Selengkapnya...</a>
+          </p>
+        
+          <div className="informasiall">
+          <p className="kecil">INFORMATION</p>
+            <br /> 
+            <Link href="#Home" className="kecil">
+                    <p>Beranda</p>
+                  </Link>
+                  <br />
+            <Link href="#tentangkami" className="kecil">
+                    <p>Tentang Kami</p>
+                  </Link>
+                  <br />
+            <Link href="#galery" className="kecil">
+                    <p>Design</p>
+                  </Link>
+                  <br />
+            <Link href="#hubungikami" className="kecil">
+                    <p>Hubungi Kami</p>
+                  </Link>
+          </div>
+
+          <div className="informasiall1 ">
+          <p className="kecil">INFORMATION</p>
+            <br /> 
+            <Link href="#Home" className="kecil">
+                    <p>Beranda</p>
+                  </Link>
+                  <br />
+            <Link href="#tentangkami" className="kecil">
+                    <p>Tentang Kami</p>
+                  </Link>
+                  <br />
+            <Link href="#galery" className="kecil">
+                    <p>Design</p>
+                  </Link>
+                  <br />
+            <Link href="#hubungikami" className="kecil">
+                    <p>Hubungi Kami</p>
+                  </Link>
+          </div>
+  
+
+
+        </div>
         <center>
-          <p className="bg-black text-white font-bold">© 2023 Karya. M Abdul Qodir Jailani</p>
+          <p className="text-gray-300 bg-white  font-bold byhamud">© 2023 Karya. M Abdul Qodir Jailani</p>
         </center>
       </footer>
     </>

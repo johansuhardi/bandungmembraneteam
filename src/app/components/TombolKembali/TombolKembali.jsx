@@ -8,7 +8,7 @@ const Tombolkembali = () => {
 
         <div className="p-3 rounded fixed bottom-5 right-5 flex text-center">
            
-            <Link href="https://wa.me/085691451094 " >
+            <Link href="https://wa.me/+6281320818830" >
                 <center>
            <p className="text-white font-bold shadow">Hubungi Kami</p> 
                
