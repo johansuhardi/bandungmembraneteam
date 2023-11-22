@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Footer from "@/app/components/Footer/Footer"
+
+import Navbar from "@/app/Utilities/Navbar/Navbar"
+import TombolKembali from "@/app/components/TombolKembali/TombolKembali"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +24,9 @@ export default function RootLayout({
       <body 
       className={inter.className}>
         {children}
-        
+        <Navbar />
+        <TombolKembali />
+        <Footer />
         </body>
     </html>
   )
