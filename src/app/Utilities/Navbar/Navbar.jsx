@@ -72,22 +72,22 @@ export default function Home() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="warna shadow font-bold">
-                  <Link href="#Home">
+                  <Link href="#Home"onClick={() => setNavbar(!navbar)}>
                     <p>HOME</p>
                   </Link>
                 </li>
                 <li className="warna shadow font-bold">
-                  <Link href="#galery">
+                  <Link href="#galery" onClick={() => setNavbar(!navbar)} >
                   <p>DESIGN</p>
                   </Link>
                 </li>
                 <li className="warna shadow font-bold">
-                  <Link href="#tentangkami">
+                  <Link href="#tentangkami"onClick={() => setNavbar(!navbar)}>
                   <p>TENTANG KAMI</p>
                   </Link>
                 </li>
                 <li className="warna shadow font-bold">
-                  <Link href="#hubungikami">
+                  <Link href="#hubungikami"onClick={() => setNavbar(!navbar)}>
                   <p>HUBUNGI KAMI</p>
                   </Link>
                 </li>
