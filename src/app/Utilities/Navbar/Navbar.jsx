@@ -7,6 +7,21 @@ import { useState } from 'react';
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
   return (
     <div>
 
@@ -71,26 +86,36 @@ export default function Home() {
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="warna shadow font-bold">
+                <li className="warna font-bold">
                   <Link href="#Home"onClick={() => setNavbar(!navbar)}>
                     <p>HOME</p>
                   </Link>
                 </li>
-                <li className="warna shadow font-bold">
+                <li className="warna font-bold">
                   <Link href="#galery" onClick={() => setNavbar(!navbar)} >
                   <p>DESIGN</p>
                   </Link>
                 </li>
-                <li className="warna shadow font-bold">
+                <li className="warna  font-bold">
                   <Link href="#tentangkami"onClick={() => setNavbar(!navbar)}>
                   <p>TENTANG KAMI</p>
                   </Link>
                 </li>
-                <li className="warna shadow font-bold">
+                <li className="warna  font-bold">
                   <Link href="#hubungikami"onClick={() => setNavbar(!navbar)}>
                   <p>HUBUNGI KAMI</p>
                   </Link>
                 </li>
+                
+                <div className="dropdown warna  font-bold">
+    <button class="dropbtn" onclick="myFunction()">PRODUK
+    <i class="fa fa-caret-down"></i>
+  </button>
+    <div className="dropdown-content">
+      <a href="#Membrane"  onClick={() => setNavbar(!navbar)}>Tenda Membrane</a>
+      <a href="#Kanopi"  onClick={() => setNavbar(!navbar)}>Kanopi</a>
+    </div>
+  </div>    
               </ul>
             </div>
           </div>
