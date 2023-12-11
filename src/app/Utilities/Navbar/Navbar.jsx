@@ -7,21 +7,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
+ 
   return (
     <div>
 
@@ -106,16 +92,18 @@ window.onclick = function(e) {
                   <p>HUBUNGI KAMI</p>
                   </Link>
                 </li>
+                <li className="warna  font-bold">
+                  <Link href="#Kanopi"onClick={() => setNavbar(!navbar)}>
+                  <p>CANOPY</p>
+                  </Link>
+                </li>
+                <li className="warna  font-bold">
+                  <Link href="#Membrane"onClick={() => setNavbar(!navbar)}>
+                  <p>TENDA MEMBRANE</p>
+                  </Link>
+                </li>
                 
-                <div className="dropdown warna  font-bold">
-    <button class="dropbtn" onclick="myFunction()">PRODUK
-    <i class="fa fa-caret-down"></i>
-  </button>
-    <div className="dropdown-content">
-      <a href="#Membrane"  onClick={() => setNavbar(!navbar)}>Tenda Membrane</a>
-      <a href="#Kanopi"  onClick={() => setNavbar(!navbar)}>Kanopi</a>
-    </div>
-  </div>    
+ 
               </ul>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Kanopi = () => {
     <br />
     <div className="textgambarkanopi flex">
     <div className="gambarkanopi">
-    <Image src={gambarkanopi1} width={2000} height={3000} className="rounded-xl gambar1kanopi"/>
+    <Image src={gambarkanopi1} width={2000} height={3000} className="rounded-xl gambar1kanopi" alt="..."/>
     </div>
     <div className="textkanopi">
    <p className="judultextkanopi">Canopy Membrane</p>
