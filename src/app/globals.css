@@ -8,6 +8,7 @@ html {
   background-color: darkgray;
 }
 
+
 .galeri {
   font: bold;
 }
@@ -34,6 +35,15 @@ z-index: 9999;
 
 .warna {
   color: white;
+  padding: 14px 16px;
+
+}
+
+.warna:hover {
+  background-color: white;
+  color: black;
+  transition: 0.7s;
+  border-radius: 9px;
 }
 
 .italic {
@@ -186,7 +196,7 @@ url('./aplay.jpeg')
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  border: #fff 1px solid;
+  
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -230,7 +240,7 @@ url('./aplay.jpeg')
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .buttons .button {
@@ -393,6 +403,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   color: white;
   position: relative;
   background-color: white;
+  border-radius: 9px;
 }
 
 .caption {
@@ -416,10 +427,10 @@ input:nth-of-type(5):checked ~ main#carousel {
 .img-box:hover img { 
   transform: scale(1.1);
 }
-
+/* 
 .img-box:hover .transparent-box {
   background-color:rgba(0, 0, 0, 0.5);
-}
+} */
 
 .img-box:hover .caption {
   transform: translateY(-20px);
@@ -428,6 +439,8 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 .img-box:hover {
   cursor: pointer;
+  box-shadow: 6px 6px 5px rgb(92, 91, 91);
+  transition: 0.7s;
 }
 
 .caption > p:nth-child(2) {
@@ -491,7 +504,12 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 @media (min-width: 320px) and (max-width: 767px){
   .tentangkami2 {
-    text-align: center;
+    text-align: left;
+  }
+
+  .textgambarkanopi {
+    flex-direction: column-reverse;
+    
   }
 
   .tentangkami {
@@ -548,6 +566,12 @@ input:nth-of-type(5):checked ~ main#carousel {
   display: none;
  }
 
+ .gambarkanopi {
+  padding-left: 6%;
+  padding-right: 6%;
+  /* height: 600px;
+  width: 483px; */
+} 
 
   
 }
@@ -634,10 +658,12 @@ display: block;
 
 
 .gambarkanopi {
-  padding-left: 140px;
+  padding-left: 6%;
   /* height: 600px;
   width: 483px; */
 }
+
+
 
 
 
@@ -649,7 +675,7 @@ display: block;
   padding-bottom: 100px;
   padding-top: 150px;
   background-size: cover;
-  font-size: 48px; 
+  font-size: 42px; 
   color: #fc035a ;
 } 
 
@@ -658,7 +684,7 @@ display: block;
 }
 
 .judultextkanopi {
-  font-size: 50px;
+  font-size: 42px;
   font: bold;
   color: #fc035a ;
 }
@@ -667,3 +693,77 @@ display: block;
   color: #fc035a ;
 }
 
+/* Gaya untuk navigasi */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Gaya untuk dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: 0.7s;
+}
+
+/* Gaya untuk tombol dropdown */
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  margin: 0;
+  padding: 14px 16px;
+  
+}
+
+
+
+.dropbtn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.7s;
+  border-radius: 9px;
+}
+
+/* Gaya untuk konten dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 9px;
+  border-top: 3px solid yellow;
+
+}
+
+/* Gaya untuk link pada dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.7s;
+}
+
+/* Hover effect pada link dropdown */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  transition: 0.7s;
+}
+
+/* Menampilkan dropdown saat tombol dihover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 0.7s;
+}
+
+.button {
+  background-color: gray;
+}
+
+.textxl {
+  font-size: 1000px;
+}

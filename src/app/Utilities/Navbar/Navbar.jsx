@@ -1,13 +1,15 @@
 "use client"
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react';
+
 
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
- 
+  
   return (
     <div>
 
@@ -92,7 +94,11 @@ export default function Home() {
                   <p>HUBUNGI KAMI</p>
                   </Link>
                 </li>
-                <li className="warna  font-bold">
+
+                 <div class="dropdown">
+    <button class="dropbtn font-bold">PRODUK</button>
+    <div class="dropdown-content">
+    <li className="warna  font-bold">
                   <Link href="#Kanopi"onClick={() => setNavbar(!navbar)}>
                   <p>CANOPY</p>
                   </Link>
@@ -102,8 +108,8 @@ export default function Home() {
                   <p>TENDA MEMBRANE</p>
                   </Link>
                 </li>
-                
- 
+    </div>
+  </div> 
               </ul>
             </div>
           </div>

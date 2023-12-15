@@ -10,7 +10,7 @@ const Kanopi = () => {
     <br />
     <br />
     <br />
-    <div className="textgambarkanopi flex">
+    <div className="textgambarkanopi flex ">
     <div className="gambarkanopi">
     <Image src={gambarkanopi1} width={2000} height={3000} className="rounded-xl gambar1kanopi" alt="..."/>
     </div>
@@ -18,7 +18,9 @@ const Kanopi = () => {
    <p className="judultextkanopi">Canopy Membrane</p>
    <br />
    <br />
-   <p className="text-left">Kanopi adalah sebutan lain dari istilah yang sering digunakan dalam bidang bangunan. Kanopi merupakan rangka dan atap yang biasanya dipasang di beranda depan rumah ataupun bangunan. Kanopi terdiri atas 2 jenis yaitu: kanopi baja ringan dan kanopi besi hollow.</p>
+   <p className="text-left">Kanopi adalah sebutan lain dari istilah yang sering digunakan dalam bidang bangunan. </p>
+   <p className="text-left"> Kanopi merupakan rangka dan atap yang biasanya dipasang di beranda depan rumah ataupun bangunan.</p>
+   <p className="text-left">Kanopi terdiri atas 2 jenis yaitu: kanopi baja ringan dan kanopi besi hollow.</p>
    <br />
    <p className="text-left">    Canopy membrane (Kanopi Membrane ) merupakan salah satu inovasi dari kanopi konvensional yang mana bentuknya sangat monoton dan terlihat kaku. Walaupun demikian, Kanopi membrane dari waktu ke waktu semakin banyak diminati oleh orang-orang terutama untuk beberapa wilayah kota besar.</p>
     </div >

@@ -7,6 +7,8 @@ import Whatsapp4 from "@/app/WhatsAppImage-2023-11-13-at-10.39.57(4).jpeg"
 import Whatsapp0 from "@/app/WhatsAppImage-2023-11-13-at-10.39.57.jpeg"
 import Image from "next/image"
 import styles from "./styles.module.css"
+import whatsapp from "@/app/whatsapp1.png"
+
 
     
    const Carousel =() => {
@@ -25,13 +27,13 @@ import styles from "./styles.module.css"
 
 
 <center>
-<div>
-    <h1 className="text-white font-bold">Desain Unik & Atraktif & Ikonik</h1>
-    <p className="text-white font-bold ">Membuat tampilan menarik, efisien, serta menambah keindahan</p>
+<div className="text-left ">
+    <p className="text-white font-bold textxl">Spesialis Tenda Membrane </p>
+    <p className="text-white font-bold ">Sedang Mencari Tenda Membrane Berkualitas ? biar kami survey langsung</p>
 </div>
-    <div class="buttons">
-      <a href="#tentangkami" class="button"><span>About US</span></a>
-      <a href="#galery" class="button"><span>Design</span></a>
+    <div class="buttons ">
+
+      <a href="https://wa.me/+6281320818830" class="button"><span><p></p>081320818830</span></a>
     </div>
 </center>
   </header>
