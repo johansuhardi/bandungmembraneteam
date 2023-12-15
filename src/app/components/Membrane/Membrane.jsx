@@ -21,7 +21,7 @@ const Membrane = () => {
    <br />
    <p className="text-left">Tenda membrane adalah tenda yang terbuat dari kain dengan material khusus. Jenis tenda ini mempunyai serat kain yang cukup kuat. Sehingga tahan terhadap guyuran air hujan maupun sengatan panas matahari. Tenda membrane memberikan kesan modern untuk tempat seperti Mall, Cafe, Rekreasi, Carport Rumah, Lapangan Futsal, Lapangan Tenis dan sebagainya. Tenda membrane juga memiliki nilai seni yang tinggi karena desain atap membrane yang di kerjakan oleh tim berpengalaman.</p>
    <br />
-   <p className="text-left">PT. Megatent Globalindo Sinergi adalah perusahaan tensile membrane terbesar di Indonesia. Dengan menggunakan Cutting Software kami mampu menghasilkan karya desain kerumitan tinggi untuk hasil yang maksimal. Pemilihan kontruksi membrane dan bahan tidak bisa di aplikasikan sembarangan, kami telah menyediakan bahan pilihan terbaik dengan desain atap membrane yang di kerjakan oleh tim.</p>
+   <p className="text-left">BMT Bandung Membrane Team adalah perusahaan tensile membrane terbesar di Indonesia. Dengan menggunakan Cutting Software kami mampu menghasilkan karya desain kerumitan tinggi untuk hasil yang maksimal. Pemilihan kontruksi membrane dan bahan tidak bisa di aplikasikan sembarangan, kami telah menyediakan bahan pilihan terbaik dengan desain atap membrane yang di kerjakan oleh tim.</p>
     </div >
     </div>
     <br />
