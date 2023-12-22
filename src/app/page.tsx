@@ -13,27 +13,27 @@ import Membrane from "@/app/components/Membrane/Membrane"
 export default function Home() {
   return (
     <>
-   
+
       <div className="hideung">
         <div className="container-all " id="Home">
-        <Navbar />
-        
+          <Navbar />
+
           <Carousel />
         </div>
         <div id="galery" >
-         <Design />
+          <Design />
         </div>
         <TentangKami />
         <p className="titik" id="hubungikami"></p>
         <br />
         <br />
         <HubungiKami />
-         <Kanopi />   
-         <br />    
-         <br />    
-         <br />    
-         <Membrane />       
-       
+        <Kanopi />
+        <br />
+        <br />
+        <br />
+        <Membrane />
+
       </div>
 
 

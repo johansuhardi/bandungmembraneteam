@@ -1,4 +1,23 @@
+"use client"
+
+import React, { useState } from 'react';
+
 const HubungiKami = () => {
+
+  const [comments, setComments] = useState([]);
+
+  const addComment = (newComment) => {
+    setComments([...comments, newComment]);
+  };
+
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://bmtbandung-membrane-team-id.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+
+
     return (
         <div className="map">
         
@@ -27,9 +46,12 @@ const HubungiKami = () => {
 <a className="textsm"  href="https://wa.me/+6281320818830">+6281320818830</a>
 <br />
 <p>Email</p>
- <a className="textsm" href="mailto:taufikhid28117@gmail.com">taufikhid28117@gmail.com</a></p>
+ <a className="textsm" href="mailto:taufikhid28117@gmail.com">taufikhid28117@gmail.com</a>
+ 
+ </p>
 
 </div>
+ <div id="disqus_thread"></div>
 
         </div>
 

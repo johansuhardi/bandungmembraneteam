@@ -9,9 +9,20 @@ import Link from 'next/link';
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
+  let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  const navbar = document.querySelector('#navbar');
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = '0';
+  } else {
+    navbar.style.top = `-${navbar.offsetHeight}px`;
+  }
+  prevScrollpos = currentScrollPos;
+};
   
   return (
-    <div>
+    <div className="pengurungnav">
 
     <div className="containernavbar" id="navbar">
       <Head>
@@ -25,7 +36,7 @@ export default function Home() {
       <nav className="w-full ">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 md:py-5 md:block hamberger">
               <a href="#">
                 <h2 className="shadow warna font-bold flex italic text-2xl "> <p className="text-center">BMT</p><span className="hijauMuda">Bandung Membrane team</span></h2>
               </a>
